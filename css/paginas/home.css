@@ -1,0 +1,33 @@
+main {
+    margin: 8rem auto;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 4rem;
+    display: inline-block; /* Garante que o título tenha largura proporcional */
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    height: 6px; /* Define a altura da linha */
+    background: var(--cor-2); /* Cor da linha */
+    z-index: -1;
+}
+
+h1::before {
+    top: -1.2rem;
+    right: 100%; /* A linha começa na extremidade esquerda do título */
+    margin-right: -1.4rem;
+    width: 100%; 
+}
+
+h1::after {
+    bottom: -1.2rem; /* Ajusta a linha abaixo do título, 8px de distância para não sobrepor */
+    left: 100%; /* A linha começa na extremidade esquerda do título */
+    margin-left: -1rem;
+    width: 100%; /* A linha tem a mesma largura que o título */
+}

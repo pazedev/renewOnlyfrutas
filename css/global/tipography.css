@@ -1,0 +1,48 @@
+.poppins-l {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 1rem;
+}
+
+.poppins-m {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.poppins-s {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.inter-l {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.inter-m {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.inter-s {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.inter-xs {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.
+}
