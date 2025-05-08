@@ -1,59 +1,60 @@
 .header-bg {
   background-color: var(--cor-1);
-  position: relative;
-  min-height: 6rem;
+  width: 100%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.6rem;
-  min-height: 6rem;
+  padding: 2rem;
 }
 
 .header img {
-  max-width: 14rem;
+  max-width: 160px;
 }
 
-/*menu hamburguer */
-.primaria {
-  display: flex;
-  align-items: center;
+/* Menu hamburguer */
+
+#burguer {
+  font-size: 3rem;
+  color: var(--cor-6);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001; /* maior que o menu */
 }
-  
-  .menu-bt {
-    border: none;
-    padding: 0; /* tira espaçamento interno */
-    margin: 0; /* tira espaçamento externo */
-    cursor: pointer; /* mãozinha no hover */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.4rem;
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-  
-  .menu-bt span {
-    display: block;
-    width: 100%;
-    height: 0.4rem;
-    background-color: var(--cor-5);
-    border-radius: 0.2rem;
-    transition: all 0.3s ease; /* já prepara pra animar depois */
-  }
-  .header-menu {
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    position: absolute;
-  }
-  
-  .header-menu.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  } 
-  
+
+#burguer:hover {
+  color: var(--cor-5);
+}
+
+#itens {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60vw;
+  height: 100vh;
+  background-color: var(--cor-2);
+  color: var(--cor-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3.6rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 999; /* para garantir que fique sobre o conteúdo */
+}
+
+#itens.show {
+  right: 0;
+}
+
+#itens a {
+  display: block;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--cor-6);
+}

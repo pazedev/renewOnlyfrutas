@@ -1,11 +1,12 @@
+/* Main */
 main {
-    margin: 8rem auto;
+    margin-top: 8rem;
     text-align: center;
 }
 
 h1 {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 3.2rem;
     display: inline-block; /* Garante que o título tenha largura proporcional */
 }
 
@@ -16,18 +17,17 @@ h1::after {
     height: 6px; /* Define a altura da linha */
     background: var(--cor-2); /* Cor da linha */
     z-index: -1;
+    width: 51.8vw; /* A linha agora ocupa 50% da largura da tela, o que faz com que ela saia das bordas do título */
 }
 
 h1::before {
-    top: -1.2rem;
-    right: 100%; /* A linha começa na extremidade esquerda do título */
-    margin-right: -1.4rem;
-    width: 100%; 
+    top: -1rem; /* Ajusta a linha acima do título */
+    left: -50vw; /* A linha começa 50% antes da primeira letra */
 }
 
 h1::after {
-    bottom: -1.2rem; /* Ajusta a linha abaixo do título, 8px de distância para não sobrepor */
-    left: 100%; /* A linha começa na extremidade esquerda do título */
-    margin-left: -1rem;
-    width: 100%; /* A linha tem a mesma largura que o título */
+    bottom: -1rem; /* Ajusta a linha abaixo do título */
+    right: -50vw; /* A linha termina 50% depois da última letra */
 }
+
+/* Part 1 */
